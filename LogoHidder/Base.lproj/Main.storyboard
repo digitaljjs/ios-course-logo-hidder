@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--MainFace-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="MainFace" id="BYZ-38-t0r" customClass="ViewController" customModule="LogoHidder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAO-VC-ga8">
+                                <rect key="frame" x="122" y="446" width="130" height="45"/>
+                                <state key="normal" title="Hide Sight Farm">
+                                    <color key="titleColor" red="1" green="0.061312897204426009" blue="0.21364804661963455" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sfDisappear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MrZ-BX-fA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbP-EW-90T">
+                                <rect key="frame" x="116" y="510" width="142" height="45"/>
+                                <state key="normal" title="Hide RD Holldings">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rdDisappear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ge3-of-HLy"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sightFarm" translatesAutoresizingMaskIntoConstraints="NO" id="Yy2-KQ-hIB">
+                                <rect key="frame" x="35" y="137" width="135" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rdHoldings" translatesAutoresizingMaskIntoConstraints="NO" id="gW4-vZ-VpN">
+                                <rect key="frame" x="206" y="137" width="134" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="rdButton" destination="mbP-EW-90T" id="Xaf-7W-TF0"/>
+                        <outlet property="rdHoldings" destination="gW4-vZ-VpN" id="A9j-UM-BsW"/>
+                        <outlet property="sfButton" destination="gAO-VC-ga8" id="qVC-bX-uJr"/>
+                        <outlet property="sightFarm" destination="Yy2-KQ-hIB" id="zWh-b8-f8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rdHoldings" width="150" height="150"/>
+        <image name="sightFarm" width="150" height="150"/>
+    </resources>
+</document>
